@@ -13,7 +13,6 @@ dependencies = [
     "gunicorn (>=23.0.0,<24.0.0)"
 ]
 
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
@@ -26,17 +25,17 @@ ruff = "^0.11.11"
 [tool.black]
 line-length = 88
 target-version = ["py312"]
-skip-string-normalization = true
-exclude = '''
-/(
-    \.venv
-  | \.mypy_cache
-  | \.pytest_cache
-  | \.tox
-  | migrations
-  | settings\.py
-  | manage\.py
-)/
-'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+# Enable Ruff's linter + import sorter
+lint.select = ["E", "F", "B", "I", "UP", "RUF"]
+
+# Auto-fix only safe, well-known rules
+lint.fixable = ["ALL"]
+lint.unfixable = []
+exclude = ["migrations", "settings.py", ".venv", "__pycache__"]
 
 

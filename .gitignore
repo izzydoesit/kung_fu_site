@@ -15,7 +15,7 @@ db.sqlite3
 .env
 venv/
 .venv/
-.env.* 
+.env.*
 *.env
 
 # Poetry
@@ -26,7 +26,7 @@ build/
 
 # VSCode or PyCharm junk
 .idea/
-.vscode/
+# .vscode/
 
 # MacOS junk
 .DS_Store

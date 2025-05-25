@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Django
+*.log
+*.pot
+*.pyc
+media/
+staticfiles/
+db.sqlite3
+
+# Env
+.env
+venv/
+.venv/
+.env.* 
+*.env
+
+# Poetry
+poetry.lock
+*.egg-info/
+dist/
+build/
+
+# VSCode or PyCharm junk
+.idea/
+.vscode/
+
+# MacOS junk
+.DS_Store

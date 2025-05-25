@@ -8,7 +8,19 @@ Contact | Hung Family Kung Fu
   <h2 class="text-light">Contact Sifu Lloyd Wright</h2>
   <p>Interested in classes? Fill out the form below and Sifu will get back to you.</p>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-4">
+  {% if submitted %}
+    <div class="alert alert-success mt-4 p-3 border border-success rounded-3 shadow-sm">
+      <h5 class="mb-2">🥋 Thanks for reaching out!</h5>
+      <p class="mb-0">Your message has been sent. Sifu will contact you soon.</p>
+    </div>
+  {% endif %}
+
+  <form action="https://formspree.io/f/xldbyjrl" method="POST" class="mt-4">
+    <!-- Hidden inputs go here -->
+    <input type="hidden" name="_subject" value="New contact form submission from kung_fu_site" />
+    <input type="hidden" name="_redirect" value="http://127.0.0.1:8000/contact?submitted=true" />
+    <input type="text" name="_gotcha" style="display:none" />
+
     <div class="mb-3">
       <label for="name" class="form-label">Your Name</label>
       <input type="text" name="name" id="name" class="form-control" required />

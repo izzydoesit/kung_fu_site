@@ -11,4 +11,5 @@ def about_view(request):
 
 
 def contact_view(request):
-    return render(request, "contact.html")
+    submitted = request.GET.get("submitted", False)
+    return render(request, "contact.html", {"submitted": submitted})

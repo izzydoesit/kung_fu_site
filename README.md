@@ -22,3 +22,15 @@ poetry shell
 python manage.py migrate
 python manage.py runserver
 ```
+
+This will start the Django development server on port 8000. You can access the site by navigating to http://localhost:8000 in your web browser.
+
+🛡️ License & Use
+This codebase is licensed under the MIT License.
+However, all brand assets, photos, and written content belong to Sifu Lloyd Wright and the Hung Family Kung Fu school.
+Please do not reuse media or likeness without written permission.
+
+For more about the lineage and organization, visit:
+
+- [Yee’s Hung Ga Main Site](https://www.yeeshungga.com/)
+- [Original Midtown Branch Site (being retired)](https://www.hungfamilykungfu.com/)

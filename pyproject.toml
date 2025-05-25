@@ -17,3 +17,26 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pre-commit = "^4.2.0"
+ruff = "^0.11.11"
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+skip-string-normalization = true
+exclude = '''
+/(
+    \.venv
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.tox
+  | migrations
+  | settings\.py
+  | manage\.py
+)/
+'''
+
+

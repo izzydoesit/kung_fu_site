@@ -1,0 +1,22 @@
+# Set your target Python version
+target-version = "py312"
+
+# Match Black formatting rules
+line-length = 88
+
+[lint]
+# Enable Ruff's defaults, plus some extras
+select = [
+  "E",   # pycodestyle (PEP 8)
+  "F",   # pyflakes
+  "B",   # flake8-bugbear
+  "I",   # isort (import sorting)
+  "UP",  # pyupgrade
+  "RUF", # Ruff-specific rules
+]
+
+# Exclude common Django-generated files
+exclude = ["migrations", "settings.py", ".venv"]
+
+# Auto-fix rules we trust (safe)
+fixable = ["ALL"]

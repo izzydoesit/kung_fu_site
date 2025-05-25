@@ -26,7 +26,7 @@ python manage.py runserver
 This will start the Django development server on port 8000. You can access the site by navigating to http://localhost:8000 in your web browser.
 
 🛡️ License & Use
-This codebase is licensed under the MIT License.
+This codebase is licensed under the [MIT License](https://github.com/izzydoesit/kung_fu_site/LICENSE).
 However, all brand assets, photos, and written content belong to Sifu Lloyd Wright and the Hung Family Kung Fu school.
 Please do not reuse media or likeness without written permission.
 
